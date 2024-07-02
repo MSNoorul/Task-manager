@@ -19,6 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/auth', require('./routes/authRoutes'))
 app.use('/task', require('./routes/taskRoutes'))
+app.use('/user', require('./routes/userRoutes'))
 
 
 connectDB.authenticate()
